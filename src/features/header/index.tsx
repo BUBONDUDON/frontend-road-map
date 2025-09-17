@@ -1,5 +1,5 @@
 export const AppHeader = () => {
   return (
-    <div>AppHeader</div>
+    <main>AppHeader</main>
   )
 }
