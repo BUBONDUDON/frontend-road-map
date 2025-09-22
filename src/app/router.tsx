@@ -13,19 +13,19 @@ export const router = createBrowserRouter([
     children: [
       {
         path: ROUTES.LOGIN,
-        lazy: () => import("@/features/auth/login.page"),
+        lazy: () => import("@/features/auth/login.page.tsx"),
       },
       {
         path: ROUTES.REGISTER,
-        lazy: () => import("@/features/auth/register.page"),
+        lazy: () => import("@/features/auth/register.page.tsx"),
       },
       {
         path: ROUTES.HOME,
-        lazy: () => import("@/features/item-list/item-list.page"),
+        lazy: () => import("@/features/content/content.page"),
       },
       {
         path: "*",
-        lazy: () => import("@/features/item-list/item-list.page"),
+        lazy: () => import("@/features/content/content.page"),
       },
     ],
   },
