@@ -1,3 +1,4 @@
+import { AppFooter } from "@/features/footer";
 import { AppHeader } from "@/features/header";
 import { ROUTES } from "@/shared/model/routes";
 import { Outlet, useLocation } from "react-router-dom";
@@ -18,6 +19,7 @@ export function App() {
     >
       {!isAuthPage && <AppHeader />}
       <Outlet />
+      <AppFooter />
     </div>
   );
 }
