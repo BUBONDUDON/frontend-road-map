@@ -9,7 +9,14 @@ export function App() {
     location.pathname === ROUTES.LOGIN || location.pathname === ROUTES.REGISTER;
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-300 via-purple-300 to-pink-300">
+    <div
+      className="
+    min-h-screen
+    flex flex-col 
+    bg-gradient-to-br from-indigo-300 via-purple-300 to-pink-300 
+    dark:bg-gradient-to-br dark:from-violet-950 dark:via-blue-950 dark:to-cyan-900
+    overflow-hidden"
+    >
       {!isAuthPage && <AppHeader />}
       <Outlet />
     </div>

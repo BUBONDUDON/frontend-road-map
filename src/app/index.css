@@ -2,8 +2,12 @@
 @import "tw-animate-css";
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: "Jura", sans-serif;
+  scrollbar-width: none;
 }
 @custom-variant dark (&:is(.dark *));
 
