@@ -8,14 +8,16 @@ import {
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/app/theme-provider";
 import { TechList } from "./techList";
+import { Input } from "@/shared/ui/kit/input";
 
 export const AppHeader = () => {
   const { theme, setTheme } = useTheme();
   return (
     <header className="flex justify-center py-4 z-50">
-      <div className="flex justify-end items-center w-23/24 h-20 bg-slate-950 rounded-full px-6 py-3 shadow-lg">
-        <TechList />
-        <HoverCard openDelay={100}>
+      <div className="flex justify-end items-center w-12/24 h-20 rounded-full px-6 py-3 shadow-lg">
+        {/*<TechList />*/}
+        <Input placeholder="site search" className="m-4 w-auto" />
+        <HoverCard openDelay={50}>
           <HoverCardTrigger asChild>
             <Button className="mr-4" variant="outline">
               AUTH

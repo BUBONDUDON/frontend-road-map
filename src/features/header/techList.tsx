@@ -15,7 +15,7 @@ export function TechList() {
     <NavigationMenu viewport={false} className="mr-auto">
       <NavigationMenuList>
         {TECH_LIST.map(({ name, icon, description, sections }) => (
-          <NavigationMenuItem key={name} className="border-0">
+          <NavigationMenuItem key={name}>
             <NavigationMenuTrigger>{name}</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul
