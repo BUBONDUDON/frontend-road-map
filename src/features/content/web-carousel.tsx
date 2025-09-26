@@ -9,7 +9,6 @@ import {
 } from "@/shared/ui/kit/carousel";
 import { useState, useEffect } from "react";
 import AutoPlay from "embla-carousel-autoplay";
-import { Button } from "@/shared/ui/kit/button";
 export function WebSitesCarousel() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -17,6 +16,7 @@ export function WebSitesCarousel() {
 
   useEffect(() => {
     if (!api) {
+      console.log(current, count);
       return;
     }
 
