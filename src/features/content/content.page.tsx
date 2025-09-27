@@ -1,11 +1,10 @@
-import { TechList } from "./techList";
+import { TestTechList } from "./tech-list/test-tech-list";
 
 export const Content = () => {
   return (
     <div className="grid grid-cols-2 h-screen w-screen">
-      <div className="items-center"></div>
       <div className="flex justify-center items-center">
-        <TechList />
+        <TestTechList />
       </div>
     </div>
   );

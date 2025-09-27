@@ -142,3 +142,13 @@ export const TECH_LIST: Tech[] = [
     ],
   },
 ];
+
+export const GRID_POSITIONS = [
+  { col: 2, row: 1 },
+  { col: 1, row: 2 },
+  { col: 3, row: 2 },
+  { col: 2, row: 3 },
+  { col: 1, row: 4 },
+  { col: 3, row: 4 },
+  { col: 2, row: 5 },
+];
