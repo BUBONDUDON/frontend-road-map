@@ -27,7 +27,8 @@ export function TechList() {
             hover:scale-105 hover:drop-shadow-[6px_6px_0_rgba(0,0,0,1)]
             flex items-center justify-center
             rounded-3xl
-            [&>svg]:hidden [&_[data-chevron]]:hidden [&_.chevron]:hidden"
+            [&>svg]:hidden [&_[data-chevron]]:hidden [&_.chevron]:hidden
+            data-[state=open]:bg-gray-100"
               >
                 <div className="transform -rotate-45 text-lg font-bold dark:text-black">
                   {name}
